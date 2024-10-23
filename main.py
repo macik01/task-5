@@ -11,9 +11,9 @@ elif smina.count("_") > 1:
     print ("False")
 elif smina[0].isdigit():
     print("False")
-else: print("True")'''
+else: print("True")
 #task 5/2
-while True:
+ #while True:
 
     operation = input("Якщо потрібно рахувати, введіть 'Yes', якщо ні — інше: ")
     lower_operation = operation.lower()
@@ -39,7 +39,19 @@ while True:
         else:
             print("Помилка: Ділення на нуль!")
     else:
-        print("Помилка: Невірна операція.")
+        print("Помилка: Невірна операція.")'''
+ # task 5.3
+hashtag = str(input("ведіть слово для hashtag: "))
+cleaned_words = []
+for word in hashtag.split():
+    cleaned_word = ''.join(char for char in word if char not in string.punctuation)
+    cleaned_words.append(cleaned_word)
+hashtag = '#' + ''.join(word.capitalize() for word in cleaned_words if word)
+print(hashtag)
+
+
+
+
 
 
 
