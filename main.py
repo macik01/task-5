@@ -2,6 +2,7 @@ import string
 import keyword
 
 #task 5/1
+smina = input("ведіть зміну")
 if smina in keyword.kwlist:
     print("False")
 elif smina.isupper() or smina in string.whitespace or (smina in string.punctuation and smina != '_'):
